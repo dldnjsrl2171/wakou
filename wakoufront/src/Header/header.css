@@ -1,0 +1,51 @@
+/* Header Style */
+
+header {
+    display: flex;
+    height: 15vh; /* 높이를 화면 크기의 15%로 설정 */
+    max-height: 1200px;
+    width: 100%; /* 넓이를 100%로 설정 */
+    border: 1px solid #f1f4f7; /* 1px 검은색 태두리 추가 */
+    box-sizing: border-box; /* 박스 크기에 패딩 및 테두리를 포함시킵니다. */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerLogo{
+    margin-left: 5%;
+}
+#headerLogoImg{
+    height: 100%;
+    max-height: 15vh;
+    float: left;
+    display: flex;
+}
+#headerLogin{
+    border: 1px solid #f1f4f7; /* 1px 검은색 태두리 추가 */
+    height: 100%;
+    width: 20%;
+    min-width: 120px;
+    margin-right: 5%;
+}
+
+#headerLoginForm{
+    height: 100%;
+    flex-direction: column; /* 요소들을 세로로 배치 */
+    align-items: center; /* 가운데 정렬 (선택 사항) */
+}
+
+#loginId , #loginPw{
+    width: calc(100% - (2 * 3%) - 4px); /* margin을 고려하여 최대 100% , border 고려 8px*/
+    height: 20%;
+    max-height: 25px;
+    margin: 3%;
+    padding: 0;
+}
+
+#loginSubmit{
+    width: calc(100% - (2 * 3%));
+    height: 20%;
+    max-height: 25px;
+    margin: 3%;
+    padding: 0;
+}

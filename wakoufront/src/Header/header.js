@@ -1,4 +1,5 @@
 import "./header.css";
+import {ModalDataSet} from "../Modal/modal"
 import LogoImg from "./Img/Wakou-logo.png";
 
 //Header Render
@@ -36,11 +37,7 @@ function headerLoginBox(){
     //Not Logined (Default)
     let headerLogin = 
     <div id="headerLogin">
-        <form id="headerLoginForm">
-            <input type="text"      id="loginId"    title="ID"  placeholder="IDを入力してください"></input>
-            <input type="password"  id="loginPw"    title="PW"  placeholder="PWを入力してください"></input>
-            <input type="button"    id="loginSubmit" title="LOGIN" value="LOGIN"></input>
-        </form>
+        <input type="button"    id="loginSubmit" title="LOGIN" value="LOGIN" onClick={()=> ModalDataSet("Login")}></input>
     </div>;
 
     //Logined

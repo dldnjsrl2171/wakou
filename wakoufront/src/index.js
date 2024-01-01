@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Header from './Header/header';
+import "./root.css";
+import Header from './Header/headerMain';
 import SideBar from './SideBar/SideBar';
+import Modal from "./Modal/modalMain";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <React.Fragment>
     <Header />
+    <Modal />
     <SideBar />
-  </>
-  , document.getElementById('root')
+  </React.Fragment>
 );

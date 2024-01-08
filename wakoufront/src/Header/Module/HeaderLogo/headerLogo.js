@@ -6,12 +6,11 @@ import logoImageFile from "../../Img/HeaderLogoImage.png";
 
 /*ModuleMain*/
 export function HeaderLogo(){
-    console.log("헤더 로그 랜더링 시작");
+    console.log("헤더 로그 랜더링");
     const render = 
     <div id="HeaderLogo">
         <LogoImage />
     </div>
-    console.log("헤더 로그 랜더링 끝");
     return render;
 }
 

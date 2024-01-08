@@ -1,13 +1,6 @@
-import {useState} from "react";
-import "./modalMain.css";
-
-export function ModalMain(command){
-    const [data , setData] = useState(1);
-    if(command == "login"){
-        setData("Login");
-    }
-    const render = <div>{data}</div>
+export function ModalMain(props){
+    console.log(props);
+    const render = <div>{props.profile}</div>;
     return render;
 }
-
 export default ModalMain;

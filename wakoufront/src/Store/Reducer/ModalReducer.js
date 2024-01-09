@@ -1,11 +1,18 @@
-export function ModalReducer(state , action){
-    if(state === undefined){
-        return {profile : "close"} ;
-    }
+//InitState
+const initState = {profile : "close"};
+
+export function ModalReducer(state = initState , action){
+    
     const newState = {...state};
-    if(action.type === "Login"){
-        newState.profile = "Login";
+
+    //Action
+    switch(action.type){
+        case "modalLogin" : newState.profile = action.type;
+        break;
+        
     }
+
+    
     return newState;
 }
 export default ModalReducer;

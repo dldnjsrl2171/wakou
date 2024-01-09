@@ -44,7 +44,7 @@ function ModalRender(){
     console.log(store);
     const render = (
         <React.Fragment>
-            <ModalMain profile={useSelector((state)=>state.profile)}></ModalMain>
+            <ModalMain></ModalMain>
         </React.Fragment>
     )
     return render;

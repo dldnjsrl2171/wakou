@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./headerMenu.css";
 import HeaderLoginButtonImage from "../../Img/HeaderLoginButton.png";
-import { Common } from "../../../app";
 import { useDispatch } from "react-redux";
 
 
@@ -21,7 +20,7 @@ function HeaderLoginButton(){
     console.log("버튼 랜더링");
     const dispatch = useDispatch();
     const render =
-    <button id="HeaderLoginButton" title="CallLoginButton" onClick={()=>{dispatch({type : "Login"})}}>
+    <button id="HeaderLoginButton" title="CallLoginButton" onClick={()=>{dispatch({type : "modalLogin"})}}>
         <img src={HeaderLoginButtonImage} id="HeaderLoginButtonImage"></img>
     </button>
     
